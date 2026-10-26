@@ -5,7 +5,6 @@ import CtaBand from "../components/CtaBand.jsx";
 const TEASERS = [
   { to: "/tjenester", title: "Tjenester", text: "Formidling, innbytte, kjøp og garanti." },
   { to: "/biler", title: "Biler", text: "Se bilene, og utvalget på Finn.no." },
-  { to: "/om-oss", title: "Om oss", text: "KA AUTO i Sandvika." },
   { to: "/kontakt", title: "Kontakt", text: "Ring, send e-post eller bruk skjemaet." },
 ];
 

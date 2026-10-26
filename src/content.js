@@ -34,7 +34,6 @@ export const NAV = [
   { to: "/", label: "Hjem", end: true },
   { to: "/tjenester", label: "Tjenester" },
   { to: "/biler", label: "Biler" },
-  { to: "/om-oss", label: "Om oss" },
   { to: "/kontakt", label: "Kontakt" },
 ];
 
@@ -42,7 +41,6 @@ export const FOOTER_LINKS = [
   { to: "/", label: "Hjem" },
   { to: "/tjenester", label: "Tjenester" },
   { to: "/biler", label: "Biler" },
-  { to: "/om-oss", label: "Om oss" },
   { to: "/kontakt", label: "Kontakt" },
 ];
 
@@ -69,7 +67,7 @@ export const SERVICES = [
     text: "Rask og rettferdig vurdering som kan brukes som deloppgjør når du kjøper din neste bil hos oss.",
   },
   {
-    title: "Salgsvurdering / kjøp av bil",
+    title: "Oppkjøp av bil",
     text: "Gratis og uforpliktende vurdering. Vi kjøper også direkte. Raskt oppgjør, ingen skjulte kostnader.",
   },
   {
@@ -81,6 +79,6 @@ export const SERVICES = [
 export const HELP_OPTIONS = [
   "Salg av bil",
   "Kjøp av bil",
-  "Salgsvurdering",
+  "Innbytte",
   "Annet",
 ];

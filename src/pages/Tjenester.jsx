@@ -23,8 +23,8 @@ const SERVICES = [
     link: true,
   },
   {
-    tab: "Salgsvurdering",
-    title: "Salgsvurdering",
+    tab: "Oppkjøp av bil",
+    title: "Oppkjøp av bil",
     text: "Gratis og uforpliktende vurdering. Vi kjøper også direkte. Raskt oppgjør, ingen skjulte kostnader.",
     card: "Gratis og uforpliktende vurdering. Vi kjøper også direkte, med raskt oppgjør.",
     photo: asset("images/hero-panamera-front.jpg"),
@@ -49,7 +49,7 @@ export default function Tjenester() {
   return (
     <div className="services-page">
       <section className="svc-banner">
-        <img src={asset("images/hero-rs7-front.jpg")} alt="" />
+        <img src={asset("images/hero-golf-r.jpg")} alt="Blå Volkswagen Golf R" />
         <div className="svc-banner-panel">
           <p className="svc-crumb">
             <Link to="/">Hjem</Link>

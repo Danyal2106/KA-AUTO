@@ -121,7 +121,7 @@ export default function Contact() {
           <p>Fortell oss om bilen, så tar vi kontakt.</p>
         </div>
         <div className="contact-hero-photo">
-          <img src={asset("images/bmw-cab-banner.png")} alt="Mørk blå BMW cabriolet" />
+          <img src={asset("images/contact-white-audi.jpg")} alt="Hvit Audi RS7 foran en betongvegg" />
         </div>
       </div>
 

@@ -7,7 +7,6 @@ import Contact from "./components/Contact.jsx";
 import Home from "./pages/Home.jsx";
 import Tjenester from "./pages/Tjenester.jsx";
 import Biler from "./pages/Biler.jsx";
-import OmOss from "./pages/OmOss.jsx";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -27,7 +26,6 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/tjenester" element={<Tjenester />} />
           <Route path="/biler" element={<Biler />} />
-          <Route path="/om-oss" element={<OmOss />} />
           <Route path="/kontakt" element={<Contact />} />
         </Routes>
       </main>

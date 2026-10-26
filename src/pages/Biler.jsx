@@ -12,12 +12,10 @@ const CARS = [
   { src: PHOTOS.m5Black, label: "BMW M5, sort", alt: "Sort BMW M5" },
   { src: asset("images/bmw-e36-front.jpg"), label: "BMW cabriolet, forfra", alt: "Mørk blå BMW cabriolet forfra" },
   { src: asset("images/bmw-e36-rear.jpg"), label: "BMW cabriolet, bakfra", alt: "Mørk blå BMW cabriolet bakfra" },
-  { src: asset("images/bmw-e36-interior.jpg"), label: "BMW interiør", alt: "Interiør i en BMW cabriolet" },
   { src: asset("images/m5-white-front.jpg"), label: "BMW M5, forfra", alt: "Hvit BMW M5 forfra" },
   { src: asset("images/m5-white-rear.jpg"), label: "BMW M5, bakfra", alt: "Hvit BMW M5 bakfra" },
   { src: asset("images/golf-r-front.jpg"), label: "Volkswagen Golf R, forfra", alt: "Blå Volkswagen Golf R forfra" },
   { src: asset("images/golf-r-rear.jpg"), label: "Volkswagen Golf R, bakfra", alt: "Blå Volkswagen Golf R bakfra" },
-  { src: PHOTOS.interior, label: "Interiør", alt: "Interiør i en BMW" },
 ];
 
 export default function Biler() {
