@@ -93,22 +93,35 @@ export default function Contact() {
         }),
       });
 
-      const data = await response.json().catch(() => null);
-      const failed = !response.ok || data?.success === false || data?.success === "false";
-      if (failed) {
-        const activation = /activat/i.test(String(data?.message || ""));
-        const err = new Error(activation ? "activation" : "send failed");
-        err.activation = activation;
-        throw err;
+      const raw = await response.text();
+      let data = null;
+      try {
+        data = raw ? JSON.parse(raw) : null;
+      } catch {
+        data = null;
+      }
+
+      const flag = data?.success;
+      const normalized = typeof flag === "string" ? flag.trim().toLowerCase() : flag;
+      const message = String(data?.message ?? "");
+      const activation = /activat/i.test(message) || /activat/i.test(raw);
+      const saysDelivered =
+        /submitted successfully/i.test(message) ||
+        /form was submitted/i.test(message) ||
+        /submitted successfully/i.test(raw) ||
+        /form was submitted/i.test(raw);
+      const delivered =
+        response.ok &&
+        !activation &&
+        (normalized === true || normalized === "true" || saysDelivered);
+
+      if (!delivered) {
+        throw new Error("send failed");
       }
       setStatus("sent");
-    } catch (err) {
+    } catch {
       setStatus("error");
-      setError(
-        err?.activation
-          ? "KA AUTO må åpne e-posten fra FormSubmit og trykke aktiveringslenken én gang. Deretter virker skjemaet. Du kan også ringe oss på"
-          : "Vi fikk ikke sendt meldingen. Prøv igjen, eller ring oss på",
-      );
+      setError("Vi fikk ikke sendt meldingen. Prøv igjen, eller ring oss på");
     }
   }
 
