@@ -51,7 +51,7 @@ export default function Hero() {
       <div className="glow" aria-hidden="true" />
       <div className="wrap hero-grid">
         <div className="hero-copy">
-          <p className="eyebrow">KA AUTO · Sandvika</p>
+          <p className="eyebrow">KA AUTO · SANDVIKA</p>
           <h1>
             <span>Bilhandel</span>
             <span>
@@ -67,13 +67,14 @@ export default function Hero() {
             ))}
           </ul>
           <div className="hero-actions">
-            <a className="btn btn-primary" href={FINN_URL} target="_blank" rel="noreferrer">
+            <a className="btn btn-primary" href={FINN_URL} target="_blank" rel="noopener noreferrer">
               Se biler til salgs
             </a>
             <Link className="btn btn-line" to="/kontakt">
               Kontakt oss
             </Link>
           </div>
+          <p className="hero-offer">Kjøp, salg og formidling i Sandvika.</p>
           <p className="hero-phone">
             <a href={`tel:${PHONE_TEL}`}>
               <svg viewBox="0 0 24 24" aria-hidden="true">
