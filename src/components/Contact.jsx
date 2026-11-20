@@ -115,6 +115,14 @@ export default function Contact() {
         !activation &&
         (normalized === true || normalized === "true" || saysDelivered);
 
+      if (activation) {
+        setStatus("activation");
+        setError(
+          `Skjemaet må aktiveres én gang. Åpne e-posten FormSubmit sendte til ${EMAIL}, og trykk på aktiveringslenken. Deretter kan du sende på nytt.`,
+        );
+        return;
+      }
+
       if (!delivered) {
         throw new Error("send failed");
       }
