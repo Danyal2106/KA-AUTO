@@ -11,7 +11,7 @@ import {
   asset,
 } from "../content.js";
 
-const ENDPOINT = "https://formsubmit.co/ajax/kaauto1@hotmail.com";
+const ENDPOINT = `https://formsubmit.co/ajax/${EMAIL}`;
 
 const emptyForm = {
   name: "",

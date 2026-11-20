@@ -3,7 +3,7 @@ export const FINN_URL =
 
 export const PHONE_DISPLAY = "92 67 67 92";
 export const PHONE_TEL = "92676792";
-export const EMAIL = "kaauto1@hotmail.com";
+export const EMAIL = "post@kaauto.no";
 export const ADDRESS_LINE = "Industriveien 31";
 export const POSTAL = "1337 Sandvika";
 export const ADDRESS = `${ADDRESS_LINE}, ${POSTAL}`;
